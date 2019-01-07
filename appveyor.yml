@@ -5,7 +5,12 @@ branches:
     - project/travis
 
 environment:
+    image:
+    - Visual Studio 2015
+    - Visual Studio 2017
+    - Ubuntu
     matrix:
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     - name: win32
       platform: amd64_x86
       qt: msvc2017
