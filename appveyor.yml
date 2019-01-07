@@ -3,12 +3,12 @@ version: build{build}
 branches:
     except:
     - project/travis
-
-environment:
-    image:
+image:
     - Visual Studio 2015
     - Visual Studio 2017
     - Ubuntu
+    
+environment:
     matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     - name: win32
